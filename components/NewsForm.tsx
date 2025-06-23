@@ -9,7 +9,7 @@ export default function NewsForm({ onSubmit }: { onSubmit: (url: string) => void
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-black text-gray-900 mb-2">
-            📰 뉴스 요약기
+            📰 네이버 뉴스 요약기
           </h1>
           <p className="text-gray-600 text-lg">
             네이버 뉴스 링크를 입력하면 핵심 내용을 요약해드려요
@@ -26,7 +26,7 @@ export default function NewsForm({ onSubmit }: { onSubmit: (url: string) => void
           <div className="flex-1 relative">
             <input
               type="text"
-              placeholder="https://news.naver.com/... 뉴스 URL을 입력하세요"
+              placeholder="https://n.news.naver.com/... 뉴스 URL을 입력하세요"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               className="w-full px-6 py-4 pl-12 text-lg border-2 border-gray-200 rounded-xl 
@@ -59,7 +59,7 @@ export default function NewsForm({ onSubmit }: { onSubmit: (url: string) => void
         
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-500">
-            💡 팁: 네이버 뉴스 기사 URL만 지원됩니다
+            💡 TIP: 네이버 뉴스 기사 URL만 지원됩니다
           </p>
         </div>
       </div>
